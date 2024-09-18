@@ -52,7 +52,7 @@ encodingList = [encoding(imgList), studentId]
 print("Encoding completed.")
 
 # Save encoded file in pickle file
-file = open('encoded_file.p', 'wb')
+file = open('encodedFile.p', 'wb')
 pickle.dump(encodingList, file)
 file.close()
 print("File created successfully.")

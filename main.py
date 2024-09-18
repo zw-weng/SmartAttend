@@ -31,7 +31,7 @@ for path in modesPathList:
     modesImgList.append(cv2.imread(os.path.join(modesPath, path)))
 
 # Load encoded file
-file = open('encoded_file.p', 'rb')
+file = open('encodedFile.p', 'rb')
 encodeListWithId = pickle.load(file)
 file.close()
 
@@ -117,7 +117,7 @@ while True:
             bgImg[44:44+633, 808:808+414] = modesImgList[modeType]
                 
             if cnt <= 10:
-                cv2.putText(bgImg, str(stdInfo['tot_attendance']), (861,125), cv2.FONT_HERSHEY_COMPLEX, 1, (255q,255,255), 1)
+                cv2.putText(bgImg, str(stdInfo['tot_attendance']), (861,125), cv2.FONT_HERSHEY_COMPLEX, 1, (255,255,255), 1)
                 cv2.putText(bgImg, str(id), (1003,493), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1)
                 cv2.putText(bgImg, str(stdInfo['major']), (1003,552), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255,255,255), 1)
                 cv2.putText(bgImg, str(stdInfo['cgpa']), (910,625), cv2.FONT_HERSHEY_COMPLEX, 0.6, (100,100,100), 1)
@@ -141,6 +141,7 @@ while True:
     
     else:
         modeType = 0
+        cnt = 0
     
     cv2.imshow("SmartAttend", bgImg)
     
