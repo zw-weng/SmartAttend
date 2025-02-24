@@ -11,20 +11,11 @@ SmartAttend is a computer vision project designed to automate student attendance
 
 ## Getting Started
 
-### Installing
-
-* In Git Bash,
+### Installation
 ```
 git clone https://github.com/zw-weng/SmartAttend.git
 ```
-
-### Dependencies
-
-* Python
-* Run the command below,
+### Installing Dependencies
 ```
 pip install -r requirements.txt
 ```
-
-## Use Case
-SmartAttend is ideal for educational institutions that require a reliable, automated solution for tracking student attendance during classes, labs, or events.
