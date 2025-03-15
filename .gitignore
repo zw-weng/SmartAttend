@@ -1,4 +1,5 @@
 serviceAccountKey.json
 cv_env/
 .vscode
+__pycache__/
 face-recognition-attendance-system.code-workspace
